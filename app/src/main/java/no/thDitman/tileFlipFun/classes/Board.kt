@@ -28,6 +28,6 @@ class Board constructor(size: Int) {
     }
 
     fun flipAdjacent(index: Int) {
-
+        //TODO
     }
 }
