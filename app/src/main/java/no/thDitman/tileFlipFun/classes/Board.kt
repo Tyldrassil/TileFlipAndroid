@@ -49,4 +49,10 @@ class Board constructor(size: Int) {
             flipSingle(index+boardSize)
         }
     }
+
+    fun resetBoard() {
+        board.indices.forEach { board[it] = false }
+    }
+
+
 }

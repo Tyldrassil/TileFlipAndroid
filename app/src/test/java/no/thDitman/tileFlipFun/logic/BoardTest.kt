@@ -13,8 +13,14 @@ class BoardTest {
 
         val expected = Board(3)
 
+        expected.board[0] = true
+        expected.board[1] = true
+        expected.board[2] = true
+        expected.board[4] = true
 
+        actual.flipOnTap(1)
 
+        assertEquals(expected.board.toList(), actual.board.toList())
     }
 
     @Test
@@ -101,6 +107,17 @@ class BoardTest {
 
     @Test
     fun resetBoard() {
+        val actual = Board(3)
 
+        val expected = Board(3)
+
+        actual.board[0] = true
+        actual.board[4] = true
+        actual.board[5] = true
+        actual.board[7] = true
+
+        actual.resetBoard()
+
+        assertEquals(expected.board.toList(), actual.board.toList())
     }
 }
