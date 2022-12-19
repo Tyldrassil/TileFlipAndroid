@@ -22,6 +22,9 @@ class Board constructor(size: Int) {
 
     fun flipOnTap(index: Int) {
 
+        flipSingle(index)
+        flipAdjacent(index)
+
     }
 
     fun flipSingle(index: Int) {

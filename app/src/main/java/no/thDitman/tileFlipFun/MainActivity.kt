@@ -10,6 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import no.thDitman.tileFlipFun.classes.Board
+import no.thDitman.tileFlipFun.composables.FlipBoard
 import no.thDitman.tileFlipFun.ui.theme.TileFlipApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    FlipBoard(board = Board(3))
                 }
             }
         }
