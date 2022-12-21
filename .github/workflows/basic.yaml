@@ -28,7 +28,7 @@ jobs:
         
       - name: Run Unit Tests
         if: always()        
-        run: ./gradlew testDebugUnitTest
+        run: ./gradlew BoardTest
       
       - name: CodeAnalysis via  detekt
         run: ./gradlew detekt
